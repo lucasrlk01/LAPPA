@@ -1,6 +1,6 @@
 window.onload = function() {
     if (!localStorage.getItem('loggedIn')) {
-        window.location.href = "../html/login.html"; // Redireciona para a tela de login
+        window.location.href = "login.html"; // Redireciona para a tela de login
     } else {
         const userName = localStorage.getItem('userName');
         document.getElementById('userName').textContent = userName || "Usuário";
